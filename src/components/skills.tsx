@@ -84,8 +84,7 @@ const Skills = () => {
           </h3>
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              'Git', 'Linux', 'Docker', 'AWS', 'Firebase', 'GraphQL', 'Redis', 'PostgreSQL',
-              'Nginx', 'Jest', 'Webpack', 'Vite', 'Figma', 'Adobe XD'
+              'Git', 'Linux', 'Docker', 'AWS', 'PostgreSQL', 'Vite', 'Ollama', 'Supabase'
             ].map((tech, index) => (
               <motion.span
                 key={tech}
