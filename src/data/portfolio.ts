@@ -114,6 +114,28 @@ export const experience = [
     endDate: "June 2026",
     description: null,
     technologies: ["C++", "Java", "Python", "Data Structures", "Algorithms"]
+  },
+  {
+    id: 3,
+    type: "education" as const,
+    title: "Intermediate",
+    company: "St. Francis School",
+    location: "Tanakpur, Uttarakhand",
+    startDate: "April 2020",
+    endDate: "March 2022",
+    description: null,
+    technologies: []
+  },
+  {
+    id: 4,
+    type: "education" as const,
+    title: "Matriculation",
+    company: "St. Francis School",
+    location: "Tanakpur, Uttarakhand",
+    startDate: "April 2018",
+    endDate: "March 2020",
+    description: null,
+    technologies: []
   }
 ]
 

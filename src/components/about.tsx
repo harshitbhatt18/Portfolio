@@ -32,15 +32,15 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="flex justify-center lg:justify-start"
+            className="flex justify-center lg:justify-start px-4"
           >
-            <div className="relative w-80 h-80 rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src={personalInfo.image}
                 alt={personalInfo.name}
                 fill
                 className="object-cover"
-                sizes="320px"
+                sizes="(max-width: 640px) 256px, (max-width: 1024px) 288px, 320px"
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>

@@ -23,7 +23,7 @@ const Skills = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 px-4">
           {skills.map((category, categoryIndex) => (
             <motion.div
               key={category.category}
@@ -31,7 +31,7 @@ const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: categoryIndex * 0.2 }}
               viewport={{ once: true }}
-              className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700"
+              className="bg-white dark:bg-gray-900 p-6 lg:p-8 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700"
             >
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6 text-center">
                 {category.category}

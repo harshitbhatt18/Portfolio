@@ -54,24 +54,24 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4"
           >
             <button
               onClick={() => scrollToSection('#projects')}
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-300 flex items-center space-x-2"
+              className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 sm:px-8 rounded-lg transition-colors duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base"
             >
               <span>View My Work</span>
             </button>
             <button
               onClick={() => scrollToSection('#contact')}
-              className="border-2 border-blue-600 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-300 flex items-center space-x-2"
+              className="w-full sm:w-auto border-2 border-blue-600 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white font-semibold py-3 px-6 sm:px-8 rounded-lg transition-colors duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base"
             >
               <Mail className="w-4 h-4" />
               <span>Contact Me</span>
             </button>
             <a
               href={personalInfo.resume}
-              className="border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 font-semibold py-3 px-8 rounded-lg transition-colors duration-300 flex items-center space-x-2"
+              className="w-full sm:w-auto border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 font-semibold py-3 px-6 sm:px-8 rounded-lg transition-colors duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base"
               download
             >
               <Download className="w-4 h-4" />
