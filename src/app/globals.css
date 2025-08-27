@@ -79,6 +79,78 @@ html {
   .mobile-padding {
     @apply px-4 sm:px-6 lg:px-8;
   }
+
+  /* Conveyor belt mask gradient */
+  .mask-gradient {
+    -webkit-mask: linear-gradient(90deg, transparent 0%, black 10%, black 90%, transparent 100%);
+    mask: linear-gradient(90deg, transparent 0%, black 10%, black 90%, transparent 100%);
+    overflow: visible;
+  }
+
+  /* Enhanced skills hover effects */
+  @media (hover: hover) and (pointer: fine) {
+    .skills-hover-effect:hover {
+      transform: translateY(-8px) scale(1.15);
+      z-index: 50;
+    }
+  }
+
+  /* Mobile optimizations for skills */
+  @media (hover: none) and (pointer: coarse) {
+    .skills-hover-effect:active {
+      transform: translateY(-4px) scale(1.1);
+      transition-duration: 0.1s;
+    }
+  }
+
+  /* Extraordinary animations for skills section */
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @keyframes skill-glow {
+    0%, 100% { 
+      box-shadow: 0 0 20px currentColor, 0 0 40px currentColor; 
+      transform: scale(1);
+    }
+    50% { 
+      box-shadow: 0 0 30px currentColor, 0 0 60px currentColor; 
+      transform: scale(1.02);
+    }
+  }
+
+  @keyframes floating {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+  }
+
+  /* Enhanced skills container */
+  .skills-container {
+    position: relative;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(147, 51, 234, 0.05), rgba(236, 72, 153, 0.05));
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    overflow: visible;
+  }
+
+  .skills-container::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(45deg, #3b82f6, #9333ea, #ec4899, #3b82f6);
+    background-size: 400% 400%;
+    border-radius: 26px;
+    z-index: -1;
+    animation: gradient-shift 4s ease infinite;
+    opacity: 0.3;
+  }
 }
 
 /* Fix for mobile Safari viewport */
