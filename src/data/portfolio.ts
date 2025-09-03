@@ -14,7 +14,7 @@ export const socialLinks = {
   github: "https://github.com/harshitbhatt18",
   linkedin: "https://linkedin.com/in/bhattharshit18",
   // twitter: "https://twitter.com/johndoe",
-  leetcode: "https://leetcode.com/bhatt_Harshit",
+  leetcode: "https://leetcode.com/harshit_bhatt18",
   codeforces: "https://codeforces.com/profile/harshcodz18"
 }
 

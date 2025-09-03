@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, Code, Trophy, CheckCircle, AlertCircle } from 'lucide-react'
 import { personalInfo, socialLinks } from '@/data/portfolio'
 import emailjs from '@emailjs/browser'
+import Image from 'next/image'
 
 const Contact = () => {
   // Initialize EmailJS with your public key
@@ -99,12 +100,23 @@ const Contact = () => {
     }
   }
 
+  // Custom Codeforces Icon Component
+  const CodeforcesIcon = ({ className }: { className?: string }) => (
+    <Image
+      src="/codeforces-icon.png"
+      alt="Codeforces"
+      width={20}
+      height={20}
+      className={className}
+    />
+  )
+
   const socialIcons = {
     github: Github,
     linkedin: Linkedin,
     twitter: Twitter,
     leetcode: Code,
-    codeforces: Trophy
+    codeforces: CodeforcesIcon
   }
 
   return (

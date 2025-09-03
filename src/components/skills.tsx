@@ -13,6 +13,7 @@ import {
 import { 
   FaBrain, FaCode, FaCogs, FaSearch, FaBug, FaDatabase, FaServer, FaCloud, FaJava
 } from 'react-icons/fa'
+import Image from 'next/image'
 
 const Skills = () => {
   const [hoveredSkill, setHoveredSkill] = useState<string | null>(null)
@@ -616,8 +617,14 @@ const Skills = () => {
                 <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-red-500/10 to-red-600/10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500" />
                 
                 <div className="relative z-10">
-                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center">
-                    <SiCodeforces className="w-10 h-10 text-white" />
+                  <div className="w-16 h-16 mx-auto mb-4 bg-white dark:bg-white rounded-2xl flex items-center justify-center shadow-lg">
+                    <Image
+                      src="/codeforces-icon.png"
+                      alt="Codeforces"
+                      width={40}
+                      height={40}
+                      className=""
+                    />
                   </div>
                   <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors">
                     Codeforces
@@ -630,7 +637,7 @@ const Skills = () => {
 
             {/* LeetCode */}
             <motion.a
-              href="https://leetcode.com/bhatt_Harshit"
+              href="https://leetcode.com/harshit_bhatt18"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 30 }}
@@ -644,8 +651,14 @@ const Skills = () => {
                 <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-orange-500/10 to-orange-600/10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500" />
                 
                 <div className="relative z-10">
-                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center">
-                    <SiLeetcode className="w-10 h-10 text-white" />
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gray-900 dark:bg-gray-900 rounded-2xl flex items-center justify-center shadow-lg">
+                    <Image
+                      src="/leetcode-logo.png"
+                      alt="LeetCode"
+                      width={36}
+                      height={36}
+                      className="rounded-sm"
+                    />
                   </div>
                   <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">
                     LeetCode
@@ -672,8 +685,14 @@ const Skills = () => {
                 <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-amber-600/10 to-amber-700/10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500" />
                 
                 <div className="relative z-10">
-                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-amber-600 to-amber-700 rounded-2xl flex items-center justify-center">
-                    <SiCodechef className="w-10 h-10 text-white" />
+                  <div className="w-16 h-16 mx-auto mb-4 bg-white dark:bg-white rounded-2xl flex items-center justify-center shadow-lg">
+                    <Image
+                      src="/codechef-icon.png"
+                      alt="CodeChef"
+                      width={36}
+                      height={36}
+                      className="rounded-sm"
+                    />
                   </div>
                   <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
                     CodeChef
