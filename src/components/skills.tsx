@@ -671,7 +671,7 @@ const Skills = () => {
 
             {/* CodeChef */}
             <motion.a
-              href="https://www.codechef.com/users/harshit_bhatt18"
+              href="https://www.codechef.com/users/harshit_bhatt"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 30 }}
@@ -698,7 +698,7 @@ const Skills = () => {
                     CodeChef
                   </h4>
                   <p className="text-amber-600 dark:text-amber-400 font-semibold mb-2">Competitive Coder</p>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">@harshit_bhatt18</p>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">@harshit_bhatt</p>
                 </div>
               </div>
             </motion.a>
