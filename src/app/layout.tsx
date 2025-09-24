@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://harshitbhatt.dev',
+    url: 'https://harshitbhatt.netlify.app',
     title: 'Harshit Bhatt - Software Developer | Full Stack & ML Enthusiast',
     description: 'Passionate software developer specializing in C++ development, algorithms, and problem-solving.',
     siteName: 'Harshit Bhatt Portfolio',
